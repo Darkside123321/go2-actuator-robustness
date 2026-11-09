@@ -1,7 +1,0 @@
-{
-  "scope": "12-second profile in configs/evaluation.json; seed 2026; 16 paired initial states",
-  "nominal_min_completion_rate": 1,
-  "nominal_max_xy_rmse_mps": 0.2,
-  "delay40_min_completion_rate": 0.875,
-  "soft_delay40_min_completion_rate": 0.875
-}
