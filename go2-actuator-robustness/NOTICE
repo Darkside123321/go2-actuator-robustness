@@ -1,0 +1,4 @@
+Go2 Actuator Robustness: engineering extensions to Unitree RL Mjlab.
+Upstream: https://github.com/unitreerobotics/unitree_rl_mjlab
+Uses mjlab and RSL-RL under their respective licenses.
+No robot assets or upstream source tree are distributed here.

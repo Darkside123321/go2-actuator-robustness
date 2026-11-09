@@ -1,0 +1,45 @@
+{
+  "backend": "python",
+  "font_family": "Arial",
+  "font_weight": "bold",
+  "font_size_pt": 13,
+  "axis_label_size_pt": 14,
+  "tick_size_pt": 12,
+  "legend_size_pt": 12,
+  "line_width_pt": 3.2,
+  "palette": {
+    "deep_blue": "#5B83BC",
+    "light_blue": "#94BFDC",
+    "ice_cyan": "#C4EAF2",
+    "cream_yellow": "#FEDE8E",
+    "coral_orange": "#FC9262",
+    "soft_pink": "#E9A4C1"
+  },
+  "series_colors": {
+    "baseline": "#5B83BC",
+    "dr": "#FC9262",
+    "history": "#94BFDC",
+    "balanced": "#E9A4C1"
+  },
+  "series_labels": {
+    "baseline": "Official baseline",
+    "dr": "Actuator DR",
+    "history": "DR + history",
+    "balanced": "Balanced DR fine-tune"
+  },
+  "condition_labels": {
+    "nominal": "Nominal",
+    "soft": "Soft PD",
+    "stiff": "Stiff PD",
+    "delay20": "20 ms",
+    "delay40": "40 ms",
+    "soft_delay40": "Soft PD\n+40 ms"
+  },
+  "closed_frame": true,
+  "tick_direction": "in",
+  "ticks_top": true,
+  "ticks_right": true,
+  "figure_footer": false,
+  "grid": false,
+  "curve_line_style": "solid"
+}
