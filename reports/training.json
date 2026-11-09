@@ -1,0 +1,38 @@
+{
+  "dr": {
+    "variant": "dr",
+    "seed": 42,
+    "num_envs": 256,
+    "iterations": 1500,
+    "control_steps": 9216000,
+    "upstream_commit": "1425b15f73bd4095f0df53709d7c389c3eb9e790",
+    "extension_commit": "d66d9eb63ff7b4778fe8e39f609e3b63f8ca8794",
+    "success": true,
+    "wall_seconds": 1230.7921971630003,
+    "peak_RSS_MiB": 2620.76171875,
+    "run_name": "2026-11-09_18-02-47_dr_s42",
+    "final_iteration_index": 1499,
+    "actor_input_dim": 47,
+    "optimizer_steps": 30000.0,
+    "all_scalars_finite": true,
+    "final_parameters_finite": true
+  },
+  "history": {
+    "variant": "history",
+    "seed": 42,
+    "num_envs": 256,
+    "iterations": 1500,
+    "control_steps": 9216000,
+    "upstream_commit": "1425b15f73bd4095f0df53709d7c389c3eb9e790",
+    "extension_commit": "34d73bb7387c848773418345405be3d80ec3270e",
+    "success": true,
+    "wall_seconds": 1210.4941736739993,
+    "peak_RSS_MiB": 2593.09765625,
+    "run_name": "2026-11-09_18-24-59_history_s42",
+    "final_iteration_index": 1499,
+    "actor_input_dim": 188,
+    "optimizer_steps": 30000.0,
+    "all_scalars_finite": true,
+    "final_parameters_finite": true
+  }
+}

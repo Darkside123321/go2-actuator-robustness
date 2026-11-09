@@ -1,0 +1,533 @@
+{
+  "baseline": {
+    "checkpoint_sha256": "9a2610293dc12e501a8472719b989486ca9c347efc1518ce37de50b9fb13ef51",
+    "evaluation_spec": {
+      "schema_version": 1,
+      "num_envs": 16,
+      "seed": 2026,
+      "duration_s": 12,
+      "warmup_s": 2,
+      "failure_height_m": 0.14,
+      "failure_tilt_deg": 70,
+      "command_profile": [
+        {
+          "start_s": 0,
+          "velocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "start_s": 2,
+          "velocity": [
+            0.5,
+            0,
+            0
+          ]
+        },
+        {
+          "start_s": 6,
+          "velocity": [
+            0,
+            0.3,
+            0
+          ]
+        },
+        {
+          "start_s": 9,
+          "velocity": [
+            0,
+            0,
+            0.5
+          ]
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "nominal",
+          "kp_scale": 1,
+          "kd_scale": 1,
+          "delay_steps": 0
+        },
+        {
+          "name": "soft",
+          "kp_scale": 0.75,
+          "kd_scale": 0.75,
+          "delay_steps": 0
+        },
+        {
+          "name": "stiff",
+          "kp_scale": 1.25,
+          "kd_scale": 1.25,
+          "delay_steps": 0
+        },
+        {
+          "name": "delay20",
+          "kp_scale": 1,
+          "kd_scale": 1,
+          "delay_steps": 1
+        },
+        {
+          "name": "delay40",
+          "kp_scale": 1,
+          "kd_scale": 1,
+          "delay_steps": 2
+        },
+        {
+          "name": "soft_delay40",
+          "kp_scale": 0.75,
+          "kd_scale": 0.75,
+          "delay_steps": 2
+        }
+      ]
+    },
+    "extension_commit": "baseline evaluation before provenance field",
+    "summary": [
+      {
+        "name": "nominal",
+        "kp_scale": 1,
+        "kd_scale": 1,
+        "delay_steps": 0,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.15078304625711147,
+        "yaw_rmse_radps": 0.06957655213105426,
+        "torque_rms_Nm": 5.385753052034599,
+        "mean_absolute_mechanical_power_W": 26.95225830078125,
+        "issued_action_delta_rms": 0.23046277468419216
+      },
+      {
+        "name": "soft",
+        "kp_scale": 0.75,
+        "kd_scale": 0.75,
+        "delay_steps": 0,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.1966095021246013,
+        "yaw_rmse_radps": 0.11786764296289884,
+        "torque_rms_Nm": 5.6265542991470365,
+        "mean_absolute_mechanical_power_W": 20.167642211914064,
+        "issued_action_delta_rms": 0.2354813244454805
+      },
+      {
+        "name": "stiff",
+        "kp_scale": 1.25,
+        "kd_scale": 1.25,
+        "delay_steps": 0,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.1486161869089385,
+        "yaw_rmse_radps": 0.0774725994770975,
+        "torque_rms_Nm": 5.347403356419824,
+        "mean_absolute_mechanical_power_W": 33.93179626464844,
+        "issued_action_delta_rms": 0.22705076024865495
+      },
+      {
+        "name": "delay20",
+        "kp_scale": 1,
+        "kd_scale": 1,
+        "delay_steps": 1,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.21360743358121304,
+        "yaw_rmse_radps": 0.1588178882968364,
+        "torque_rms_Nm": 5.945748218264881,
+        "mean_absolute_mechanical_power_W": 72.51757202148437,
+        "issued_action_delta_rms": 0.687083103356478
+      },
+      {
+        "name": "delay40",
+        "kp_scale": 1,
+        "kd_scale": 1,
+        "delay_steps": 2,
+        "episodes": 16,
+        "completed": 7,
+        "completion_rate": 0.4375,
+        "sample_coverage": 0.613125,
+        "xy_rmse_mps": 0.48467896811960726,
+        "yaw_rmse_radps": 0.4716735569321855,
+        "torque_rms_Nm": 6.325197726095999,
+        "mean_absolute_mechanical_power_W": 124.51548165137613,
+        "issued_action_delta_rms": 0.7612039565255644
+      },
+      {
+        "name": "soft_delay40",
+        "kp_scale": 0.75,
+        "kd_scale": 0.75,
+        "delay_steps": 2,
+        "episodes": 16,
+        "completed": 14,
+        "completion_rate": 0.875,
+        "sample_coverage": 0.994875,
+        "xy_rmse_mps": 0.42153703297851364,
+        "yaw_rmse_radps": 0.3788152671471817,
+        "torque_rms_Nm": 6.103417728789915,
+        "mean_absolute_mechanical_power_W": 116.42990639527578,
+        "issued_action_delta_rms": 0.8117404959652582
+      }
+    ]
+  },
+  "dr": {
+    "checkpoint_sha256": "afe95c663fbfd545722032d59afe7798d8f0e87dec2995303061d07ff2ed6f61",
+    "evaluation_spec": {
+      "schema_version": 1,
+      "num_envs": 16,
+      "seed": 2026,
+      "duration_s": 12,
+      "warmup_s": 2,
+      "failure_height_m": 0.14,
+      "failure_tilt_deg": 70,
+      "command_profile": [
+        {
+          "start_s": 0,
+          "velocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "start_s": 2,
+          "velocity": [
+            0.5,
+            0,
+            0
+          ]
+        },
+        {
+          "start_s": 6,
+          "velocity": [
+            0,
+            0.3,
+            0
+          ]
+        },
+        {
+          "start_s": 9,
+          "velocity": [
+            0,
+            0,
+            0.5
+          ]
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "nominal",
+          "kp_scale": 1,
+          "kd_scale": 1,
+          "delay_steps": 0
+        },
+        {
+          "name": "soft",
+          "kp_scale": 0.75,
+          "kd_scale": 0.75,
+          "delay_steps": 0
+        },
+        {
+          "name": "stiff",
+          "kp_scale": 1.25,
+          "kd_scale": 1.25,
+          "delay_steps": 0
+        },
+        {
+          "name": "delay20",
+          "kp_scale": 1,
+          "kd_scale": 1,
+          "delay_steps": 1
+        },
+        {
+          "name": "delay40",
+          "kp_scale": 1,
+          "kd_scale": 1,
+          "delay_steps": 2
+        },
+        {
+          "name": "soft_delay40",
+          "kp_scale": 0.75,
+          "kd_scale": 0.75,
+          "delay_steps": 2
+        }
+      ]
+    },
+    "extension_commit": "34d73bb7387c848773418345405be3d80ec3270e",
+    "summary": [
+      {
+        "name": "nominal",
+        "kp_scale": 1,
+        "kd_scale": 1,
+        "delay_steps": 0,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.2063004957865288,
+        "yaw_rmse_radps": 0.07798065278164805,
+        "torque_rms_Nm": 5.172524694841969,
+        "mean_absolute_mechanical_power_W": 18.378196716308594,
+        "issued_action_delta_rms": 0.18146601990961264
+      },
+      {
+        "name": "soft",
+        "kp_scale": 0.75,
+        "kd_scale": 0.75,
+        "delay_steps": 0,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.28262169571387047,
+        "yaw_rmse_radps": 0.15542623427380947,
+        "torque_rms_Nm": 5.318305467616072,
+        "mean_absolute_mechanical_power_W": 13.297615051269531,
+        "issued_action_delta_rms": 0.17975124124196568
+      },
+      {
+        "name": "stiff",
+        "kp_scale": 1.25,
+        "kd_scale": 1.25,
+        "delay_steps": 0,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.19938579661634373,
+        "yaw_rmse_radps": 0.1062785390784628,
+        "torque_rms_Nm": 5.148338248284586,
+        "mean_absolute_mechanical_power_W": 23.878640747070314,
+        "issued_action_delta_rms": 0.17949031725086567
+      },
+      {
+        "name": "delay20",
+        "kp_scale": 1,
+        "kd_scale": 1,
+        "delay_steps": 1,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.2094738718277667,
+        "yaw_rmse_radps": 0.10488995462036024,
+        "torque_rms_Nm": 5.189590693156831,
+        "mean_absolute_mechanical_power_W": 18.274734497070312,
+        "issued_action_delta_rms": 0.17917231469529962
+      },
+      {
+        "name": "delay40",
+        "kp_scale": 1,
+        "kd_scale": 1,
+        "delay_steps": 2,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.22319948123338362,
+        "yaw_rmse_radps": 0.1420456801534075,
+        "torque_rms_Nm": 5.2052936546606094,
+        "mean_absolute_mechanical_power_W": 18.387606811523437,
+        "issued_action_delta_rms": 0.1752829634592385
+      },
+      {
+        "name": "soft_delay40",
+        "kp_scale": 0.75,
+        "kd_scale": 0.75,
+        "delay_steps": 2,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.2925760258394322,
+        "yaw_rmse_radps": 0.20474817206716095,
+        "torque_rms_Nm": 5.2930596509722045,
+        "mean_absolute_mechanical_power_W": 13.71606903076172,
+        "issued_action_delta_rms": 0.17523231345268062
+      }
+    ]
+  },
+  "history": {
+    "checkpoint_sha256": "13e0cc31f5d0c3c9b49921d58fae16a52a20a862dc4a8b3344eb805d7504344a",
+    "evaluation_spec": {
+      "schema_version": 1,
+      "num_envs": 16,
+      "seed": 2026,
+      "duration_s": 12,
+      "warmup_s": 2,
+      "failure_height_m": 0.14,
+      "failure_tilt_deg": 70,
+      "command_profile": [
+        {
+          "start_s": 0,
+          "velocity": [
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "start_s": 2,
+          "velocity": [
+            0.5,
+            0,
+            0
+          ]
+        },
+        {
+          "start_s": 6,
+          "velocity": [
+            0,
+            0.3,
+            0
+          ]
+        },
+        {
+          "start_s": 9,
+          "velocity": [
+            0,
+            0,
+            0.5
+          ]
+        }
+      ],
+      "scenarios": [
+        {
+          "name": "nominal",
+          "kp_scale": 1,
+          "kd_scale": 1,
+          "delay_steps": 0
+        },
+        {
+          "name": "soft",
+          "kp_scale": 0.75,
+          "kd_scale": 0.75,
+          "delay_steps": 0
+        },
+        {
+          "name": "stiff",
+          "kp_scale": 1.25,
+          "kd_scale": 1.25,
+          "delay_steps": 0
+        },
+        {
+          "name": "delay20",
+          "kp_scale": 1,
+          "kd_scale": 1,
+          "delay_steps": 1
+        },
+        {
+          "name": "delay40",
+          "kp_scale": 1,
+          "kd_scale": 1,
+          "delay_steps": 2
+        },
+        {
+          "name": "soft_delay40",
+          "kp_scale": 0.75,
+          "kd_scale": 0.75,
+          "delay_steps": 2
+        }
+      ]
+    },
+    "extension_commit": "5a6a4e29d62827e2e42041777d084cee2dec80c1",
+    "summary": [
+      {
+        "name": "nominal",
+        "kp_scale": 1,
+        "kd_scale": 1,
+        "delay_steps": 0,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.21141972331823486,
+        "yaw_rmse_radps": 0.09969665293991506,
+        "torque_rms_Nm": 5.192573573142705,
+        "mean_absolute_mechanical_power_W": 18.850259399414064,
+        "issued_action_delta_rms": 0.17319619377834675
+      },
+      {
+        "name": "soft",
+        "kp_scale": 0.75,
+        "kd_scale": 0.75,
+        "delay_steps": 0,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.2976448565527787,
+        "yaw_rmse_radps": 0.17581216091064994,
+        "torque_rms_Nm": 5.372520503683536,
+        "mean_absolute_mechanical_power_W": 17.03437194824219,
+        "issued_action_delta_rms": 0.1715657729651372
+      },
+      {
+        "name": "stiff",
+        "kp_scale": 1.25,
+        "kd_scale": 1.25,
+        "delay_steps": 0,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.20878018280930477,
+        "yaw_rmse_radps": 0.07395965001899764,
+        "torque_rms_Nm": 5.101232043278859,
+        "mean_absolute_mechanical_power_W": 23.06978759765625,
+        "issued_action_delta_rms": 0.16883998026038197
+      },
+      {
+        "name": "delay20",
+        "kp_scale": 1,
+        "kd_scale": 1,
+        "delay_steps": 1,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.2149945493495126,
+        "yaw_rmse_radps": 0.11698015103332192,
+        "torque_rms_Nm": 5.166880707932011,
+        "mean_absolute_mechanical_power_W": 19.190850830078126,
+        "issued_action_delta_rms": 0.17417801864108565
+      },
+      {
+        "name": "delay40",
+        "kp_scale": 1,
+        "kd_scale": 1,
+        "delay_steps": 2,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.21813028673471,
+        "yaw_rmse_radps": 0.14058004381227698,
+        "torque_rms_Nm": 5.191662110418012,
+        "mean_absolute_mechanical_power_W": 20.72296142578125,
+        "issued_action_delta_rms": 0.1731554862492462
+      },
+      {
+        "name": "soft_delay40",
+        "kp_scale": 0.75,
+        "kd_scale": 0.75,
+        "delay_steps": 2,
+        "episodes": 16,
+        "completed": 16,
+        "completion_rate": 1.0,
+        "sample_coverage": 1.0,
+        "xy_rmse_mps": 0.2957498724607449,
+        "yaw_rmse_radps": 0.2009773502019306,
+        "torque_rms_Nm": 5.330334402619596,
+        "mean_absolute_mechanical_power_W": 17.685443115234374,
+        "issued_action_delta_rms": 0.16648797692314282
+      }
+    ]
+  }
+}
